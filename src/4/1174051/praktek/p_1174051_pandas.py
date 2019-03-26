@@ -35,4 +35,6 @@ def write():
             parse_dates=['Hired'],
             header=0, 
             names=['Employee', 'Hired', 'Salary', 'Sick Days'])
-    df.to_csv('p_1174027_pandas_baru.csv')    
+    df.to_csv('p_1174027_pandas_baru.csv')
+
+bacalistpandas()    
