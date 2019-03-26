@@ -172,8 +172,93 @@ Hampir sama dengan library csv,tp library pandas penulisannya lebih sederhana da
 \caption{Plagiarisme}
 \label{plagiarisme}\end{figure}
 
+\section{Habib Abdul Rasyid}
+\subsection{Pemahaman Teori}
+\begin {enumerate}
+\item Apa itu fungsi file csv, jelaskan sejarah dan contoh Apa itu file CSV ?\newline
+File CSV (Comma Separated Values file) adalah jenis file teks biasa yang menggunakan penataan khusus untuk mengatur data 		tabular. Karena ini adalah file teks biasa, ini hanya dapat berisi data teks aktual. dengan kata lain, karakter ASCII atau Unicode 	yang dapat dicetak.\newline
+Dari mana File CSV Berasal?\newline
+File CSV biasanya dibuat oleh program yang menangani sejumlah besar data. Mereka adalah cara yang nyaman untuk mengekspor data dari spreadsheet dan basis data serta mengimpor atau menggunakannya dalam program lain. Misalnya, Anda dapat mengekspor hasil program penambangan data ke file CSV dan kemudian mengimpornya ke dalam spreadsheet untuk menganalisis data, menghasilkan grafik untuk presentasi, atau menyiapkan laporan untuk publikasi.
+File CSV sangat mudah untuk dikerjakan secara terprogram. Bahasa apa pun yang mendukung input file teks dan manipulasi string (seperti Python) dapat bekerja dengan file CSV secara langsung.
+Struktur file CSV diberikan oleh namanya. Biasanya, file CSV menggunakan koma untuk memisahkan setiap nilai data tertentu. 
+Contoh struktur file CSV :
 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{figures/4/1174002/struktur_csv.png}
+\caption{Contoh Struktur CSV}
+\label{fig:csv}
+\end{figure}
 
+\item Aplikasi-aplikasi apa saja yang bisa menciptakan file csv
+\begin{itemize}
+	\item Texteditor
+	Seperti Atom, VS code,sublime dan lain lan.
+	\item Program Spreadsheet
+	Seperti excel,google spreadshare,LibreOffice, Notepad
+	\item Ekspor kontak dari program
+	Saat mengekspor kontak dari program lain, misalnya dari Google Mail, Biasanya dapat memilih salah satu dari beberapa format.
+	Gmail akan menampilkan pilihan untuk file Google CSV, file Outlook CSV, atau vCard.
+\end{itemize}
+\item Jelaskan bagaimana cara menulis dan membaca file csv di excel atau spreadsheet\newline
+Menulis file csv di excel dan spreadsheet hampir sama yang mana pada bagian header kolom adalah sebagai pembeda dengan data lain.
+sehingga baris kedua atau isi dari kolom itu adalah golongan data yang dimasukkan.
+untuk membaca file CSV nya dapat menggunakan phyton, berikut adalah code untuk membaca file CSV.
+Isi file CSV nya adalah 
+name,department,birthday month
+Habib Abdul Rasyid,Informatics Engineering,Juni
+Code untuk memanggilnya 
+\lstinputlisting[firstline=7, lastline=20]{src/4/1174002/Teori/1174002_csv.py}
+hasilnya
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{figures/4/1174002/hasil1.png}
+\caption{hasil 1}
+\label{fig:csv}
+\end{figure}
+
+\item Jelaskan sejarah library csv\newline 
+Library csv menyediakan fungsionalitas untuk membaca dan menulis ke file CSV. Dirancang untuk bekerja di luar kotak dengan file CSV yang dihasilkan Excel, mudah disesuaikan untuk bekerja dengan berbagai format CSV. Library csv berisi objek dan kode lain untuk membaca, menulis, dan memproses data dari dan ke file CSV.
+\item Jelaskan sejarah library pandas\newline 
+pandas adalah Library Python open-source yang menyediakan alat analisis data kinerja tinggi dan struktur data yang mudah digunakan. pandas tersedia untuk semua instalasi Python, tetapi itu merupakan bagian penting dari distribusi Anaconda dan bekerja sangat baik di notebook Jupyter untuk berbagi data, kode, hasil analisis, visualisasi, dan teks naratif.
+\item Jelaskan fungsi-fungsi yang terdapat di library csv\newline
+Fungsi yang terdapat pada library yaitu membaca dan menulis File CSV, Contoh Penulisan Library CSV sama seperti pada Nomor 3 diatas.
+Isi file CSV nya adalah \newline
+name,department,birthday month\newline
+Habib Abdul Rasyid,Informatics Engineering,Juni\newline
+Code untuk memanggilnya \newline
+\lstinputlisting[firstline=7, lastline=20]{src/4/1174002/Teori/1174002_csv.py}
+	\item Jelaskan fungsi-fungsi yang terdapat di library pandas
+Fungsi nya sama seperti Library CSV yaitu menulis dan membaca File CSV yang membedakan adalah struktur didalam file nya
+berikut ini adalah contohnya.\newline
+Isi file CSV nya adalah\newline
+Name,Hire Date,Salary,Sick Days remaining\newline
+Graham Chapman,03/15/14,50000.00,10\newline
+John Cleese,06/01/15,65000.00,8\newline
+Eric Idle,05/12/14,45000.00,10\newline
+Terry Jones,11/01/13,70000.00,3\newline
+Terry Gilliam,08/12/14,48000.00,7\newline
+Michael Palin,05/23/13,66000.00,8\newline
+
+Code untuk membacanya.
+\lstinputlisting[firstline=21, lastline=24]{src/4/1174002/Teori/1174002_csv.py}
+hasilnya
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{figures/4/1174002/hasil2.png}
+\caption{hasil 2}
+\label{fig:csv}
+\end{figure}
+
+Plagiarisme
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.2]{figures/4/1174002/plagiarism_habib.png}
+\caption{Bukti Plagiarisme Habib}
+\label{fig:plagiarisme}
+\end{figure}
+\end{enumerate}
 
 Kalau mau dibikin paragrap \textbf{cukup enter aja}, tidak usah pakai \verb|par| dsb
 
