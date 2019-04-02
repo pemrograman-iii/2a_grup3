@@ -447,12 +447,12 @@ Berikut ini adalah langkah-langkah instalasi driver dari Arduino UNO di Windows:
     \item SIstem operasi Windows tidak menyediakan driver untuk Arduino Uno.
     \item Buka Device Manager, caranya pada bagian Search Program and Files lalu ketikkan “device manager” (tanpa tanda petik). Kemudian bagian Control Panel akan muncul halaman Device Manager, selanjutnya klik untuk menjalankan.
     \item Cari yang bernama Unknown device yang berada pada bagian Other device, biasanya ada tanda seru berwarna kuning, itu disebabkan karena penginstallan tidak berjalan dengan sempurna.
-    \item Klik kanan pada “Unknown device” kemudian pilih Update Driver Software.
+    \item Klik kanan pada “Unknown device” kemudian pilih Update Driver Software.
     \item Pilih Browse my computer for driver software.
-    \item Arahkan lokasi folder ke folder ..arduino-1.0.5 drivers. Pastikan check-box lalu centang include subfolders. Klik Next untuk melanjutkan instalasi driver.
+    \item Arahkan lokasi folder ke folder ..arduino-1.0.5 drivers. Pastikan check-box lalu centang include subfolders. Klik Next untuk melanjutkan instalasi driver.
     \item Kemudian lanjutkan dengan mengklik Install pada tampilan Windows Security.
-    \item Jika instalasi driver berhasil maka akan muncul Windows has successfully updated your driver software.
-    \item Perhatikan dan ingat nama COM Arduino Uno, karena nama COM ini yang akan digunakan untuk meng-upload program nantinya.
+    \item Jika instalasi driver berhasil maka akan muncul Windows has successfully updated your driver software.
+    \item Perhatikan dan ingat nama COM Arduino Uno, karena nama COM ini yang akan digunakan untuk meng-upload program nantinya.
 \end{enumerate}
 
 \subsection{Soal No. 3}
@@ -463,18 +463,18 @@ Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terin
 
 \begin{enumerate}
     \item Hubungkan modul TX-RX serial dengan komputer melalui serial port menggunakan DB9 cable extension.
-    \item Buka Hyper Terminal dengan menekan start kemudian All progams lalu Accessories kemudian Communications lalu Hyper Terminal.
-    \item Ketik nama untuk Connection Description, misal coba, kemudian tekan OK.
-    \item Pada Connect to, pilihlah COM port yang dipakai di Connect using, kemudian tekan OK.
-    \item Masukkan nilai-nilai port settingnya, sesuai dengan DCE-nya. Kemudian tekan OK.
+    \item Buka Hyper Terminal dengan menekan start kemudian All progams lalu Accessories kemudian Communications lalu Hyper Terminal.
+    \item Ketik nama untuk Connection Description, misal coba, kemudian tekan OK.
+    \item Pada Connect to, pilihlah COM port yang dipakai di Connect using, kemudian tekan OK.
+    \item Masukkan nilai-nilai port settingnya, sesuai dengan DCE-nya. Kemudian tekan OK.
 \end{enumerate}
 
 \subsection{Soal No. 4}
 Jelaskan sejarah library pyserial!
 
 \hfill \break
-PySerial adalah library/modul Python siap-pakai dan gratis yang dibuat untuk memudahkan kita dalam membuat program komunikasi data serial RS232 dalam bahasa Python.
-Jika modul USB-2REL dapat kita kontrol dengan mudah menggunakan Python dan PyUSB, maka modul SER-2REL juga dapat kita kontrol dengan mudah menggunakan Python dengan bantuan modul PySerial.
+PySerial adalah library/modul Python siap-pakai dan gratis yang dibuat untuk memudahkan kita dalam membuat program komunikasi data serial RS232 dalam bahasa Python.
+Jika modul USB-2REL dapat kita kontrol dengan mudah menggunakan Python dan PyUSB, maka modul SER-2REL juga dapat kita kontrol dengan mudah menggunakan Python dengan bantuan modul PySerial.
 
 \subsection{Soal No. 5}
 Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial!
@@ -499,7 +499,7 @@ Pada saat membaca serial di Arduino diperlukan perulangan agar bisa membaca data
 Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial!
 
 \hfill \break
-Fungsi yang berada pada Python, dibuat dengan nama kata kunci def kemudian diikuti dengan nama fungsinya pada pyhton.
+Fungsi yang berada pada Python, dibuat dengan nama kata kunci def kemudian diikuti dengan nama fungsinya pada pyhton.
 Seperti halnya dengan blok kode yang lain, kita juga harus memberikan identasi untuk menuliskan isi fungsi.
 
 \subsubsection{Bukti bebas plagiarisme}
@@ -508,4 +508,131 @@ Seperti halnya dengan blok kode yang lain, kita juga harus memberikan identasi u
 \includegraphics[width=10cm]{figures/5/Teori/1174051/Plagiat.png}
 \caption{Bebas Plagiarisme}
 \label{Evietania}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Dezha Aidil Martha}
+\subsection{Bagian 1 - Teori}
+\subsubsection{Apa itu fungsi device manager di windows dan folder /dev di linux}
+Fungsi device manager dan folder /dev itu berfungsi untuk mengetahui device apa saja yang telah terinstal di leptop anda serta mengetahui port yang digunakan oleh device tersebut.
+
+\subsubsection{Jelaskan langkah-langkah instalasi driver dari arduino}
+\begin{enumerate}
+\item Cara Auto
+\begin{itemize}
+\item Pertama Hubungkan sistem minimum Arduino Uno ke komputer dengan kabel USB type B(kabel Printer)
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/no1.jpg}
+\centering
+\caption{Koneksikan Arduino Uno menggunakan kabel}
+\end{figure}
+
+\item Lalu pada bagian kanan didesktop PC anda, akan muncul popup “Installing device driver software” seperti pada gambar dibawah ini.
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/no2.png}
+\centering
+\end{figure}
+
+\item Tunggu hingga selesai.
+\item Jika sudah selesai anda bisa mengecheck di device manager.
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/no3.png}
+\centering
+\caption{Cek driver sudah terinstall atau belum}
+\end{figure}
+\end{itemize}
+
+\item Cara Manual
+\begin{itemize}
+\item Penginstalan secara manual akan dilakukan jika penginstalan secara auto gagal dilakukan.
+\item Buka Device Manager, caranya pada bagian Search Program and Files lalu ketikkan “device manager”, perhatikan gambar dibawah ini. Di bagian Control Panel akan muncul Device Manager, klik untuk menjalankan.
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/no4.png}
+\centering
+\caption{Instalasi driver secara manual}
+\end{figure}
+
+\item Cari Unknown device pada bagian Other device, pada umumnya terdapat tanda seru berwarna kuning, itu disebabkan karena penginstallan tidak berjalan dengan lancar.
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/no5.png}
+\centering
+\end{figure}
+
+\item Klik kanan pada “Unknown device” kemudian pilih Update Driver Software.
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/no6.png}
+\centering
+\end{figure}
+
+\item Lalu Pilih Browse my computer for driver software.
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/no7.png}
+\centering
+\end{figure}
+
+\item Arahkan lokasi folder ke folder ..arduino-1.0.5 drivers. Pastikan check-box lalu centang include subfolders. Klik Next untuk melanjutkan instalasi driver.
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/no8.png}
+\centering
+\end{figure}
+
+\item Kemudian lanjutkan dengan mengklik Install pada tampilan Windows Security.
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/no9.png}
+\centering
+\end{figure}
+
+\item Jika instalasi driver berhasil maka akan muncul Windows has successfully updated your driver software.
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/no10.png}
+\centering
+\end{figure}
+
+\item Perhatikan dan ingat nama COM Arduino Uno, karena nama COM ini yang akan digunakan untuk meng-upload program nantinya.
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/no11.png}
+\centering
+\end{figure}
+\end{itemize}
+\end{enumerate}
+\subsubsection{Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terinstall driver}
+Untuk baudrate itu bisa dicek melalui arduino IDE, kemudian untuk mengecheck port bisa dilakukan dengan device manager
+
+\subsubsection{Jelaskan sejarah library pyserial}
+Modul ini merangkum akses untuk port serial. Ini menyediakan backends untuk Python yang berjalan di Windows, Linux, BSD (mungkin sistem yang mendukung POSIX), Jython dan IronPython (.NET dan Mono). Modul bernama "serial" secara otomatis memilih backend yang sesuai. Antarmuka berbasis kelas yang sama pada semua platform yang didukung.
+Akses ke pengaturan port melalui properti Python.
+Dukungan untuk berbagai ukuran byte, bit stop, paritas dan kontrol aliran dengan RTS / CTS dan / atau Xon / Xoff.
+Bekerja dengan atau tanpa menerima batas waktu.
+File seperti API dengan "read" dan "write" ("readline" dll. Juga didukung).
+File-file dalam paket ini adalah 100 persen Python murni.
+Port diatur untuk transmisi biner. Tidak ada stripping byte NULL, terjemahan CR-LF dll. (Yang berkali-kali diaktifkan untuk POSIX.) Ini membuat modul ini bermanfaat secara universal.
+Kompatibel dengan pustaka io (Python 2.6+)
+
+\subsubsection{Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial}
+
+
+Serial – fungsi ini untuk membuka port serial
+Write(data) – untuk menulis data lewat port serial
+Readline() – untuk membaca string dari port serial
+Read(size) – untuk membaca jumlah byte dari port serial
+Close() – ini untuk menutup port serial 
+
+\subsubsection{Jelaskan kenapa butuh perulangan dan tidak butuh perulangan dalam membaca serial}
+
+
+Perualangan dalam bahasa pemrograman berfungsi menyuruh komputer melakukan sesuatu secara berulang-ulang. Terdapat dua jenis perualangan dalam bahasa pemrograman python, yaitu perulangan dengan for dan while.
+Perulangan for disebut counted loop (perulangan yang terhitung), sementara perulangan while disebut uncounted loop (perulangan yang tak terhitung). Perbedaannya ialah, perulangan (for) biasanya dipakai untuk mengulangi kode yang sudah diketahui banyak perulangannya. Sementara itu, perulangan (while) dipakai untuk perulangan yang memiliki syarat dan tidak tentu berapa banyak perulangannya.
+Perulangan diperlukan agar dapat membaca data secara berulang kali sehingga data yang muncul lebih dari satu. Sedangkan apabila tidak memakai perulangan maka data akan terbaca satu kali saja.
+
+\subsubsection{Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial}
+
+
+Berikut merupakan contoh penggunaan fungsi yang menggunakan pyserial
+\lstinputlisting[firstline=8, lastline=15]{src/5/Teori/T1174025.py}
+
+\subsubsection{Scan Plagiarisme}
+\begin{figure}[H] 
+\includegraphics[width=5cm]{figures/5/Teori/1174025/noplg.png}
+\centering
 \end{figure}
