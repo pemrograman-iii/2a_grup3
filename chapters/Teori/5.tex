@@ -416,4 +416,96 @@ Berikut merupakan contoh penggunaan fungsi yang menggunakan pyserial
 \subsubsection{Kerjakan soal berikut ini, ....}
 \subsubsection{Penanganan Error} 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Evietania Charis Sujadi}
+{\Large \textbf{Pemahaman Teori}}
+\subsection{Soal No. 1}
+Apa itu fungsi device manager di windows dan folder /dev di linux?
 
+\hfill \break
+Fungsi device manager antara lain :
+\begin{enumerate}
+    \item Menunjukkan status suatu hardware.
+    \item Menunjukkan informasi detil suatu hardware.
+    \item Mengelola driver hardware
+    \item Disable dan Enable hardware
+    \item Mengidentifikasi konflik antar perangkat keras.
+\end{enumerate}
+
+\hfill \break
+Folder /dev berisi file device, baik dari device blok maupun device karakter. Di dalamnya setidaknya ada file biner yang bernama MAKEDEV untuk membuat device secara manual.
+
+\subsection{Soal No. 2}
+Jelaskan langkah-langkah instalasi driver dari arduino!
+
+\hfill \break
+Berikut ini adalah langkah-langkah instalasi driver dari Arduino UNO di Windows:
+
+\begin{enumerate}
+    \item Hubungkan sistem minimun Arduino Uno ke komputer dengan kabel USB type B (kabel Printer).
+    \item Lalu pada bagian kanan didesktop PC anda, akan muncul popup “Installing device driver software”.
+    \item SIstem operasi Windows tidak menyediakan driver untuk Arduino Uno.
+    \item Buka Device Manager, caranya pada bagian Search Program and Files lalu ketikkan “device manager” (tanpa tanda petik). Kemudian bagian Control Panel akan muncul halaman Device Manager, selanjutnya klik untuk menjalankan.
+    \item Cari yang bernama Unknown device yang berada pada bagian Other device, biasanya ada tanda seru berwarna kuning, itu disebabkan karena penginstallan tidak berjalan dengan sempurna.
+    \item Klik kanan pada “Unknown device” kemudian pilih Update Driver Software.
+    \item Pilih Browse my computer for driver software.
+    \item Arahkan lokasi folder ke folder ..arduino-1.0.5 drivers. Pastikan check-box lalu centang include subfolders. Klik Next untuk melanjutkan instalasi driver.
+    \item Kemudian lanjutkan dengan mengklik Install pada tampilan Windows Security.
+    \item Jika instalasi driver berhasil maka akan muncul Windows has successfully updated your driver software.
+    \item Perhatikan dan ingat nama COM Arduino Uno, karena nama COM ini yang akan digunakan untuk meng-upload program nantinya.
+\end{enumerate}
+
+\subsection{Soal No. 3}
+Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terinstall driver!
+
+\hfill \break
+\textbf{Membaca Port dari Komputer}
+
+\begin{enumerate}
+    \item Hubungkan modul TX-RX serial dengan komputer melalui serial port menggunakan DB9 cable extension.
+    \item Buka Hyper Terminal dengan menekan start kemudian All progams lalu Accessories kemudian Communications lalu Hyper Terminal.
+    \item Ketik nama untuk Connection Description, misal coba, kemudian tekan OK.
+    \item Pada Connect to, pilihlah COM port yang dipakai di Connect using, kemudian tekan OK.
+    \item Masukkan nilai-nilai port settingnya, sesuai dengan DCE-nya. Kemudian tekan OK.
+\end{enumerate}
+
+\subsection{Soal No. 4}
+Jelaskan sejarah library pyserial!
+
+\hfill \break
+PySerial adalah library/modul Python siap-pakai dan gratis yang dibuat untuk memudahkan kita dalam membuat program komunikasi data serial RS232 dalam bahasa Python.
+Jika modul USB-2REL dapat kita kontrol dengan mudah menggunakan Python dan PyUSB, maka modul SER-2REL juga dapat kita kontrol dengan mudah menggunakan Python dengan bantuan modul PySerial.
+
+\subsection{Soal No. 5}
+Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial!
+
+\hfill \break
+Fungsi-fungsi yang dipakai dari library PySerial, yaitu:
+\begin{enumerate}
+    \item Serial - fungsi ini untuk membuka port serial.
+    \item write(data) - fungsi ini menulis data lewat port serial.
+    \item readline() - fungsi ini membaca sebuah string dari port serial.
+    \item read(size) - fungsi ini untuk membaca jumlah byte dari port serial.
+    \item close() - fungsi ini untuk menutup port serial.
+\end{enumerate}
+
+\subsection{Soal No. 6}
+Jelaskan kenapa butuh perulangan dan tidak butuh perulangan dalam membaca serial!
+
+\hfill \break
+Pada saat membaca serial di Arduino diperlukan perulangan agar bisa membaca data secara berulang kali sehingga data yang muncul banyak. Sedangkan apabila tidak membutuhkan perulangan maka Arduino hanya akan membaca data sekali saja.
+
+\subsection{Soal No. 7}
+Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial!
+
+\hfill \break
+Fungsi yang berada pada Python, dibuat dengan nama kata kunci def kemudian diikuti dengan nama fungsinya pada pyhton.
+Seperti halnya dengan blok kode yang lain, kita juga harus memberikan identasi untuk menuliskan isi fungsi.
+
+\subsubsection{Bukti bebas plagiarisme}
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{figures/5/Teori/1174051/Plagiat.png}
+\caption{Bebas Plagiarisme}
+\label{Evietania}
+\end{figure}
