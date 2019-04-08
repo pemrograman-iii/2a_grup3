@@ -563,3 +563,193 @@ Fungsi hist digunakan untuk memanggil Histogram, diamana Histogram dapat menampi
 \label{fig:plagiat}
 \end{figure}
 
+
+\section{Dezha Aidil Martha}
+\subsection{ Apa itu fungsi library matplotlib}
+Library matplotlib.pyplot merupakan kumpulan fungsi atau perintah yang membuat matplotlib berfungsi seperti MATLAB. Setiap fungsi plot membuat beberapa perubahan pada gambar: misalnya., Membuat gambar, membuat area plot pada gambar, plot beberapa garis di area plot, menghias plot dengan label, dll. Berikut adalah contoh import library mtplotlib.pyplot :
+
+\lstinputlisting[firstline=8, lastline=8]{src/6/Teori/1174025/1174025.py}
+
+\subsection{Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib}
+Langkah untuk membuat Sumbu X dan Y :
+\begin{enumerate}
+	\item Pastikan matplotlib.pyplot nya sudah di import kedalam file py nya.
+	\item Untuk mempermudah memahaminya buatlah Variable X dan Y yang berisi angka Kordinat dari masing masing Sumbu.
+	\item Kemudian Variable dipanggil ke dalam perintah plt.plot, contohnya plt.plot(x,y)
+	\item Untuk menampilkan grafik nya maka buat perintah plt.show()
+	\item Berikut adalah contoh Kodingan dan Hasilnya
+\end{enumerate}
+\lstinputlisting[firstline=7, lastline=14]{src/6/Teori/1174025/1174025.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{figures/6/Teori/1174025/no2.png}
+\caption{Contoh Hasil pembuatan Sumbu X dan Y}
+\label{fig:contoh}
+\end{figure}
+
+\subsection{Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar,histogram,scatter,line dll) jenis plot di matplotlib}
+\begin{itemize}
+	\item Bar\newline
+	Bar ini berfungsi menampilkan grafik Bar secara vertikal biasanya digunakan untuk traffic penjualan.\newline
+	Cara menggunakan bar cukup ganti plt.plot menjadi plt.bar seperti pada contoh berikut :
+
+	\lstinputlisting[firstline=18, lastline=26]{src/6/Teori/1174025/1174025.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.3]{figures/6/Teori/1174025/no3b.png}
+\caption{Contoh Hasil Bar}
+\label{fig:contoh}
+\end{figure}
+\end{itemize}
+
+\begin{itemize}	
+	\item Histogram\newline
+	Histogram dapat menampilkan grafik sesuai kebutuhan contohnya menampilkan grafik bar, akan tetapi histogram ini
+	tidak mengacu pada sumbu X dan Y, artinya sumbu X dan Y jumlah datanya tidak harus sama. biasanya digunakan
+	untuk menghitung jumlah populasi.\newline
+	Cara menggunakannya yaitu dengan perintah plt.hist, Berikut adalah Contohnya :
+
+	\lstinputlisting[firstline=29, lastline=35]{src/6/Teori/1174025/1174025.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.9]{figures/6/Teori/1174025/no3h.png}
+\caption{Contoh Hasil Histogram}
+\label{fig:contoh}
+\end{figure}
+\end{itemize}
+
+\begin{itemize}
+	\item Line\newline
+	Line merupakan Plot grafik yang hanya menggambarkan sebuah garis sesuai kordinat yang kita atur.
+	Cara menggunakannya Cukup ketik perintah plt.plot
+
+	\lstinputlisting[firstline=7, lastline=14]{src/6/Teori/1174025/1174025.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.6]{figures/6/Teori/1174025/no2.png}
+\caption{Contoh Plot Line}
+\label{fig:contoh}
+\end{figure}
+\end{itemize}
+
+\begin{itemize}	
+	\item Scatter\newline
+	Scatter merupakan grafik yang didalamnya dapat berisi 2 data dalam 1 plot.\newline
+	Cara menggunakan Scatter menggunakan perintah plt.scatter, Berikut adalah contohnya :
+
+	\lstinputlisting[firstline=37, lastline=52]{src/6/Teori/1174025/1174025.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{figures/6/Teori/1174025/no3sc.png}
+\caption{Contoh Hasil Scatter}
+\label{fig:contoh}
+\end{figure}
+\end{itemize}
+
+\begin{itemize}
+	\item Pie\newline
+	Chart Pie merupakan grafik yang membentuk sperti kue Pie, dimana cara penggunaannya adalah dengan perintah
+	plt.pie seperti pada contoh berikut :
+	
+	\lstinputlisting[firstline=54, lastline=75]{src/6/Teori/1174025/1174025.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.6]{figures/6/Teori/1174025/no3pie.png}
+\caption{Contoh Hasil Pie}
+\label{fig:contoh Pie}
+\end{figure}
+
+
+\end{itemize}
+
+\subsection{Jelaskan bagaimana cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut}
+Legend digunakan untuk menampilkan keterangan tanda pada grafik, label digunakan untuk penamaan tanda tersebut.
+berikut adalah syntax untuk menampilkan legend dan penamaan label.
+
+\lstinputlisting[firstline=46, lastline=52]{src/6/Teori/1174025/1174025.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{figures/6/Teori/1174025/no4lg.png}
+\caption{Contoh Hasil Legend dan Label}
+\label{fig:contoh Legend}
+\end{figure}
+
+\subsection{Jelaskan apa fungsi dari subplot di matplotlib, dan bagaimana cara kerja dari fungsi subplot, sertakan ilustrasi dan gambar sendiri dan apa parameternya jika ingin menggambar plot dengan 9 subplot di dalamnya}
+Subplot Merupakan Plot didalam dimana Plot ini biasanya berukuran kecil sehingga dapat memuat 2 atau lebih plot dalam 1 paket Plot.\newline
+Jika ingin membuat 9 subplot maka buat perintah plt.subplot dengan parameter angka awal 3 angka kedua 3 dan angka ketiga 1, artinya angka awal adalah batas jumlah plot secara vertical, angka kedua adalah batas plot secara horizontal, dan angka ketiga adalah urutan plot nya.
+Berikut ini adalah Ilustrasi subplot.
+
+\lstinputlisting[firstline=77, lastline=110]{src/6/Teori/1174025/1174025.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{figures/6/Teori/1174025/subplot.png}
+\caption{Contoh 9 Subplot}
+\label{fig:contoh subplot}
+\end{figure}
+
+\subsection{ Sebutkan semua parameter color yang bisa digunakan (contoh: m,c,r,k,... dkk)}
+\begin{enumerate}
+	\item Parameter yang dapat digunakan adalah CMYK :
+\end{enumerate}
+ 
+\begin{itemize}
+	\item C = cyan
+	\item M = magenta
+	\item Y = yellow
+	\item K = key
+\end{itemize}
+
+\begin{enumerate}
+	\item Parameter yang kedua adalah RGB, selain menggunakan RGB nya kita juga dapat menggunakan kode warna dari RGB.
+\end{enumerate}
+
+\begin{itemize}
+	\item R = red
+	\item G = green
+	\item B = blue
+\end{itemize}
+
+\subsection{Jelaskan bagaimana cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri}
+Fungsi hist digunakan untuk memanggil Histogram, diamana Histogram dapat menampilkan grafik sesuai kebutuhan contohnya menampilkan grafik bar, akan tetapi histogram ini tidak mengacu pada sumbu X dan Y, artinya sumbu X dan Y jumlah datanya tidak harus sama. biasanya digunakan untuk menghitung jumlah populasi.\newline
+	Cara menggunakannya yaitu dengan perintah plt.hist, Berikut adalah Contohnya :
+
+	\lstinputlisting[firstline=29, lastline=35]{src/6/Teori/1174025/1174025.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{figures/6/Teori/1174025/no3h.png}
+\caption{Contoh Hasil Histogram}
+\label{fig:contoh}
+\end{figure}
+
+\subsection{Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels, colors, startangle, shadow, explode, autopct}
+\begin{itemize}
+	\item Labels\newline
+	Labels pada Pie adalah untuk menambahkan Keterangan pada Pie diamana labels ini biasanya adalah Variabel yang dialamnya berisi data array
+	\item Colors\newline
+	Colors pada pie adalah untuk mendefinisikan warna pada setiap potongannya.
+	\item Startangle\newline
+	Startangle adalah untuk mengatur perputaran potongan Pie nya dimulai dari berapa derajat.
+	\item Shadow\newline
+	Shadow adalah untuk mengatur ketebalan bayangan pada Pie.
+	\item Explode\newline
+	Explode ini untuk Mengatur Jarak Pie yang dipotong keluar.
+	\item Autopct\newline
+	Autopct ini adalah untuk perhitungan persen yang mana kita dapat mengatur berapa angka di belakang koma nya. 
+\end{itemize}
+
+\subsection{Plagiarisme}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.2]{figures/6/Teori/1174025/noplg.png}
+\caption{Plagiarisme}
+\label{fig:plagiat}
+\end{figure}
