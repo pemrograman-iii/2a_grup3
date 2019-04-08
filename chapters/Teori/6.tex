@@ -753,3 +753,173 @@ Fungsi hist digunakan untuk memanggil Histogram, diamana Histogram dapat menampi
 \caption{Plagiarisme}
 \label{fig:plagiat}
 \end{figure}
+
+\section{Evietania}
+\subsection{Apa itu fungsi library matplotlib?}
+Fungsi dari matplotlip yaitu untuk membuat visualisasi yang kuat dalam menjelaskan suatu data dalam bentuk diagram dan grafik. 
+Contoh grafik yang dapat digambarkan menggunakan Matplotlib adalah :
+\begin{itemize}
+    \item Grafik Biasa 
+    \item Chart
+    \item Grafik Polar
+    \item Dan yang lainnya, berikut adalah contoh dari metlib
+\lstinputlisting[firstline=8, lastline=14]{src/6/Teori/1174051/1174051.py}
+\end{itemize}
+
+\subsection{Jelaskan langkah-langkah membuat sumbu X dan Y di matplotlib}
+Langkah langkah membuat Sumbu X dan Y adalah sebagai berikut :
+\begin{itemize}
+    \item Buat variabel X dan Y
+    \item Masukkan nilai dari setiap variabel
+    \lstinputlisting[firstline=9, lastline=10]{src/6/Teori/1174051/1174051.py}
+    \item Deklarasikan nama dari sumbu X dan Y yang telah kita buat
+    \lstinputlisting[firstline=12, lastline=13]{src/6/Teori/1174051/1174051.py}
+\end{itemize}
+
+Setelah kita jalankan, maka beginilah hasil yang diperoleh
+\begin{figure}[H]
+    \includegraphics[width=9cm]{figures/6/Teori/1174051/1.png}
+    \caption{Hasil dari membuat sumbu X dan Y}
+    \centering
+\end{figure}
+
+\subsection{Jelaskan bagaimana perbedaan fungsi dan cara pakai untuk berbagai jenis(bar,histogram,scatter,line dll) jenis plot di matplotlib}
+\begin{itemize}
+    \item Bar\newline
+    Bar berfungsi menampilkan grafik secara vertikal biasanya digunakan untuk traffic penjualan.\newline
+    Cara menggunakan bar cukup ganti plt.plot menjadi plt.bar
+
+    \lstinputlisting[firstline=19, lastline=26]{src/6/Teori/1174051/1174051.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.3]{figures/6/Teori/1174051/2.png}
+\caption{Hasil Bar}
+\label{fig:contoh}
+\end{figure}
+\end{itemize}
+
+\begin{itemize} 
+    \item Histogram\newline
+    Histogram dapat menampilkan grafik sesuai kebutuhan contohnya menampilkan grafik bar, akan tetapi histogram ini
+    tidak mengacu pada sumbu X dan Y, biasanya digunakanuntuk menghitung jumlah populasi.\newline
+    Cara menggunakannya yaitu dengan perintah plt.hist, Berikut adalah Contohnya :
+
+    \lstinputlisting[firstline=29, lastline=35]{src/6/Teori/1174051/1174051.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.9]{figures/6/Teori/1174051/3.png}
+\caption{Hasil Histogram}
+\label{fig:contoh}
+\end{figure}
+\end{itemize}
+
+\begin{itemize}
+    \item Line\newline
+    Line merupakan Plot grafik yang hanya menggambarkan sebuah garis sesuai kordinat yang kita atur.
+    Berikut adalah Contohnya penulisannya :
+
+    \lstinputlisting[firstline=8, lastline=14]{src/6/Teori/1174051/1174051.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.6]{figures/6/Teori/1174051/1.png}
+\caption{Plot Line}
+\label{fig:contoh}
+\end{figure}
+\end{itemize}
+
+\begin{itemize} 
+    \item Scatter\newline
+    Scatter merupakan grafik yang didalamnya dapat berisi 2 data dalam 1 plot.\newline
+    Berikut adalah contohnya :
+
+    \lstinputlisting[firstline=38, lastline=52]{src/6/Teori/1174051/1174051.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{figures/6/Teori/1174051/4.png}
+\caption{Hasil Scatter}
+\label{fig:contoh}
+\end{figure}
+\end{itemize}
+
+\begin{itemize}
+    \item Pie\newline
+    Chart Pie merupakan grafik yang membentuk sperti kue Pie, berikut adalah contohnya:
+    
+    \lstinputlisting[firstline=55, lastline=75]{src/6/Teori/1174051/1174051.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.6]{figures/6/Teori/1174051/5.png}
+\caption{Hasil Pie}
+\label{fig:contoh Pie}
+\end{figure}
+
+
+\end{itemize}
+
+\subsection{Jelaskan bagaimana cara menggunakan legend dan label serta kaitannya dengan fungsi tersebut}
+Fungsi legend digunakan untuk menjelaskan makna dari objek berupa titik atau garis di dalam diagram.
+berikut adalah contohnya 
+\lstinputlisting[caption = fungsi untuk membuat legend., firstline=46, lastline=47]{src/6/Teori/1174051/1174051.py}
+contoh legend :
+\begin{figure}[H]
+    \includegraphics[width=9cm]{figures/6/Teori/1174051/6.png}
+    \caption{contoh legend}
+    \centering
+\end{figure}
+
+\subsection{Jelaskan apa fungsi dari subplot di matplotlib, dan bagaimana cara kerja dari fungsi subplot, sertakan ilustrasi dan gambar sendiri dan apa parameternya jika ingin menggambar plot dengan 9 subplot di dalamnya}
+Subplot berfungsi untuk menggabungkan beberapa plot kedalam satu figure
+cara kerjanya adalah sebagai berikut
+\lstinputlisting[firstline=78, lastline=110]{src/6/Teori/1174051/1174051.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{figures/6/Teori/1174051/subplot.png}
+\caption{Contoh Subplot}
+\label{fig:contoh subplot}
+\end{figure}
+
+\subsection{Sebutkan semua parameter color yang bisa digunakan}
+Parameter color yang bisa digunakan antara lain RGB dan CMYK
+\begin{itemize}
+    \item C (Cyan) adalah biru muda
+    \item M (Magenta) adalah merah muda
+    \item Y (Yellow) adalah kuning
+    \item K (Key) adalah hitam
+    \item R (Red) adalah merah
+    \item G (Green) adalah Hijau
+    \item B (Blue) adalah Biru
+    
+\end{itemize}
+
+\subsection{Jelaskan bagaimana cara kerja dari fungsi hist, sertakan ilustrasi dan gambar sendiri}
+cara kerja dari fungsi histogram adalah sebagai berikut :
+\lstinputlisting[firstline=29, lastline=35]{src/6/Teori/1174051/1174051.py}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{figures/6/Teori/1174051/3.png}
+\caption{Contoh Hasil Histogram}
+\label{fig:contoh}
+\end{figure}
+
+\subsection{Jelaskan lebih mendalam tentang parameter dari fungsi pie diantaranya labels, colors, startangle, shadow, explode, autopct}
+\begin{itemize}
+    \item Labels = berfungsi untuk menampilkan tulisan pada diagram pie
+    \item Colors = berfungsi untuk menentukan warna pada tiap bagian pada diagram pie
+    \item Startangle = berfungsi untuk menentukan sudut pertama pada diagram pie
+    \item Shadow = berfungsi untuk menampilkan efek timbul pada diagram pie
+    \item Explode = berfungsi untuk menunjukkan jarak pisah dari diagram pie.
+    \item Autopct = berfungsi umtuk menampilkan jumlah angka dibelakang koma pada bilangan pecahan
+\end{itemize}
+
+\subsection{Pengecekan Plagiarisme Teori}
+\begin{figure}[H]
+    \includegraphics[width=9cm]{figures/6/Teori/1174051/plagiat.png}
+    \centering
+\end{figure}
