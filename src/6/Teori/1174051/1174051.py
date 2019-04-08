@@ -61,8 +61,8 @@ makan = [2,3,4,3,2]
 working = [7,8,7,2,2]
 main = [8,5,7,8,13]
 slices = [7,2,2,13]
-aktifitas = ['tidur','makan','working','main']
-cols = ['c', 'm', 'r', 'b']
+aktifitas = ['sleeping','eating','playing','working']
+cols = ['m', 'c', 'b', 'r']
 
 plt.pie(slices,
         labels=aktifitas,
