@@ -159,9 +159,53 @@ hasilnya adalah
 	\centering
 \end{figure}
 
-\section{Dwi Yulianingsih}
+\section{Muhammad Dzihan Al-Banna}
 \subsection{Soal 1}
-Isi jawaban soal ke-1
+Libarary matplotlib berfungsi untuk menampilkan data grafik yang mudah dibuat dan ditampilkan dengan cara sederhana saja di python yaitu hanya dengan mendefinisikan tabel x dan y kemudian mengisi variabelnya dengan data. Matplotlib sangat berguna untuk data science.
+\subsection{Soal 2}
+Membuat sumbu x dan y di matplotlib cukup mudah yaitu hanya dengan mengimport matplotlib terlebih dahulu, mendefinisikan fungsi plot dan membuat variable plot dan isi variable x dan y tersebut dengan data. Variable yang diisi pertama adalah sumbu x dan yang kedua adalah sumbu y.
+
+\lstinputlisting[firstline=13, lastline=19]{src/6/Teori/1174095/T1174095_plt.py}
+\subsection{Soal 3}
+\begin{itemize}
+\item Pada penggunaan bar di awal pembuatan fungsi ditambahkan plt.bar  yang pertama kemudian isi datanya, begitu juga yang kedua melakukan hal yang sama.
+\lstinputlisting[firstline=22, lastline=32]{src/6/Teori/1174095/T1174095_plt.py}
+\item dalam penggunaan histogram juga dilakukan coding seperti diatas pada bar tetapi menggunakan plt.hist
+\item jika mau menggunakan fungsi scatter maka diganti dengan plt.scatter, jika menggunakan scatter maka grafiknya akan ditandai dengan titik.
+\lstinputlisting[firstline=35, lastline=48]{src/6/Teori/1174095/T1174095_plt.py}
+\end{itemize}
+\subsection{Soal 4}
+Membuat legend pertama-tama gunakan dulu style.use('ggplot') setelah itu buat plt.xlabel dan plt.ylabel sebagai penanda bahwa itu sumbu x dan y. setelah itu tambahkan plt.legend.
+\lstinputlisting[firstline=51, lastline=66]{src/6/Teori/1174095/T1174095_plt.py}
+\subsection{Soal 5}
+\begin{figure}[h]
+\centering
+\includegraphics[width=20cm]{figures/6/Teori/1174095/ssub.png}
+\caption{Sub Plot}
+\label{Dzihan}
+\end{figure}
+sublot berfungsi untuk menampilkan banyak plot dalam satu grafik.
+\begin{itemize}
+\item buat fungsi subplot
+\item isi parameternya
+\item definisikan colomn dan rownya.
+\item atur range yang ingin ditampilkan
+\item Jika ingin membuat 9 sublot maka atur rangenya menjadi 3,3 agar rownya terisi 3 dan coloumnnya 3.
+\end{itemize}
+\subsection{Soal 6}
+Parameter color yang bisa digunakan dalam library maplotlib adalah RGB dan CMYK.
+\subsection{Soal 7}
+Cara untuk menampilkan hist adalah dengan menggunakan plt.hist. caranya adalah sebagai berikut :
+\lstinputlisting[firstline=72, lastline=79]{src/6/Teori/1174095/T1174095_plt.py}
+\subsection{Soal 8}
+\begin{enumerate}
+\item label digunakan untuk menandai bagian tertentu seperti sumbu x atau sumbu y
+\item colors digunakan untuk memberikan warna di bagian table pada data grafik
+\item startangle digunakan untuk memutar balikan table dengan arah kebalikannya.
+\item shadow digunakan untuk memberikan bayangan pada data agar terlihat seperti 3D.
+\item explode digunakan untuk menonjolkan data dari grafik tertentu agar terlihat lebih mencolok.
+\item autocpt digunakan untuk memberi persen pada bagian paychart yang dibuat.
+\end{enumerate}
 
 Kalau mau dibikin paragrap \textbf{cukup enter aja}, tidak usah pakai \verb|par| dsb
 
