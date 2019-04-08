@@ -16,48 +16,44 @@ Device Manager diperkenalkan dengan Windows 95 dan kemudian ditambahkan ke Windo
 \subsection{Jelaskan langkah-langkah instalasi driver dari Arduino}
 Berikut ini merupakan langkah-langkah untuk melakukan instalasi driver Arduino
 \begin{itemize}
-	\item Pertama-tama, pasang board arduino pada pc. Kemudian tunggu sampai windows mencoba menginstal sendiri. jika gagal, lanjutkan ke step selanjutnya
+	\item Pertama-tama, pasang board arduino pada pc/Laptop. Kemudian tunggu sampai muncul pop up install driver, jika bermasalah lanjut ke step berikutnya
 	\item buka Device Manager 
-	\item Cari nama arduino atau "Unknown Device"
+	\item Pilih unknown device
 	\item klik kanan pada unknown device , dan pilih update software
-	\item Cari folder instalan software arduino
+	\item Masuk ke directory arduino untuk memilih folder drivernya
 	\item klik Next
-	\item Jika telah berhasil, maka proses instal driver sudah selesai
+	\item Jika telah berhasil, maka tulisannya adalah Successfully
 \end{itemize}
 
 \subsection{Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terinstal driver}
 Berikut ini merupakan cara membaca baudrate dan port dari komputer yang sudah terinstal driver :
 \begin{itemize}
-	\item Sambungkan port USB arduino dengan port USB pc
+	\item Pastikan Arduino terhubung dengan PC
 	\item Kemudian buka software arduino pada pc
-	\item Setelah itu, pilih tipe arduino yang digunakan
+	\item Setelah itu, pilih tipe sesuai dengan yang digunakan
 	\item Kemudian memilih serial port yang aktif  
-	\item Selanjutnya untuk memasukkan program pada arduino, klik tombol upload
+	\item Klik Upload untuk memasukkan program ke arduino
 	\item Setelah proses upload selesai, buka fitur serial monitor
 	\item Lalu sesuaikan Baudrate pada serial monitor dengan Baudrate yang terdapat pada program
 \end{itemize}
 
 \subsection{Jelaskan sejarah library pyserial}
-Pyserial berguna untuk merangkum akses untuk port serial. Pyserial menyediakan backends untuk Python yang berjalan di Windows, Linux, BSD (mungkin sistem yang mendukung POSIX), Jython dan IronPython (.NET dan Mono). Modul bernama "serial" secara otomatis memilih backend yang sesuai. Antarmuka berbasis kelas yang sama pada semua platform yang didukung.
+Pyserial berfungsi untuk merangkum akses untuk port serial. Pyserial menyediakan backends untuk Python yang berjalan pada sistem operasi Windows, Linux, BSD (mungkin sistem yang mendukung POSIX), Jython dan IronPython (.NET dan Mono). Modul bernama "serial" secara otomatis memilih backend yang sesuai. Antarmuka berbasis kelas yang sama pada semua platform yang didukung.
 Akses ke pengaturan port melalui properti Python.
-Dukungan untuk berbagai ukuran byte, bit stop, paritas dan kontrol aliran dengan RTS / CTS dan / atau Xon / Xoff.
-Bekerja dengan atau tanpa menerima batas waktu.
 File seperti API dengan "read" dan "write" ("readline" dll. Juga didukung).
 File-file dalam paket ini adalah 100 persen Python murni.
-Port diatur untuk transmisi biner. Tidak ada stripping byte NULL, terjemahan CR-LF dll. (Yang berkali-kali diaktifkan untuk POSIX.) Ini membuat modul ini bermanfaat secara universal.
-Kompatibel dengan pustaka io (Python 2.6+)
+Port diatur untuk transmisi biner. Tidak ada stripping byte NULL, terjemahan CR-LF dll. (Yang berkali-kali diaktifkan untuk POSIX.)
 
 \subsection{Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial}
 Serial – fungsi ini untuk membuka port serial
-Write(data) – untuk menulis data lewat port serial
-Readline() – untuk membaca string dari port serial
 Read(size) – untuk membaca jumlah byte dari port serial
+Write(data) – untuk menulis data lewat port serial
 Close() – ini untuk menutup port serial 
+Readline() – untuk membaca string dari port serial
 
 \subsection{Jelaskan kenapa butuh perulangan dalam tidak butuh perulangan dalam membaca serial}
-Perualangan dalam bahasa pemrograman berfungsi menyuruh komputer melakukan sesuatu secara berulang-ulang. Terdapat dua jenis perualangan dalam bahasa pemrograman python, yaitu perulangan dengan for dan while.
-Perulangan for disebut counted loop (perulangan yang terhitung), sementara perulangan while disebut uncounted loop (perulangan yang tak terhitung). Perbedaan yang terlihat adalah pada perulangan for digunakan untuk mengulangi kode yang sudah diketahui banyak perulangannya. Sedangkan perulangan while digunakan pada perulangan yang memiliki syarat dan tidak tentu berapa banyak perulangannya.
-Perulangan diperlukan agar dapat membaca data secara berulang kali sehingga data yang muncul lebih dari satu.  Sedangkan apabila tidak memakai perulangan maka data akan terbaca satu kali saja.
+Perualangan berfungsi menyuruh komputer melakukan sesuatu secara berulang-ulang. Terdapat dua jenis perualangan dalam bahasa pemrograman python, yaitu perulangan dengan for dan while.
+Perulangan for disebut counted loop  atau perulangan yang terhitung, sementara perulangan while disebut uncounted loop atau perulangan yang tak terhitung. Perulangan diperlukan agar dapat membaca data secara berulang kali sehingga data yang muncul lebih dari satu.  Sedangkan apabila tidak memakai perulangan maka data akan terbaca satu kali saja.
 
 \subsection{Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial}
 Berikut merupakan contoh penggunaan fungsi yang menggunakan pyserial
